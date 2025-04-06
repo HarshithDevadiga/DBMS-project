@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <title>Book a Room - Hotel Rainbow Krish</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="header-left">Hotel Rainbow Krish</div>
+    <nav class="header-right">
+      <a href="index.html">Home</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="rooms.html">Rooms</a>
+      <a href="login.html">Login</a>
+    </nav>
+  </header>
+
+  <main class="booking-container">
+    <h2>Book a Room</h2>
+    <form class="booking-form" action="confirm.html" method="get">
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email" required>
+      <input type="tel" placeholder="Phone Number" required>
+      
+      <label>Check-in Date:</label>
+      <input type="date" required>
+      
+      <label>Check-out Date:</label>
+      <input type="date" required>
+
+      <input type="number" placeholder="Number of Guests" min="1" required>
+
+      <select required>
+        <option value="">Select Room Type</option>
+        <option>Budget</option>
+        <option>King</option>
+        <option>Mid-Range Luxury</option>
+        <option>Super Deluxe</option>
+      </select>
+
+      <textarea placeholder="Any special requests?"></textarea>
+
+      <button type="submit">Confirm Booking</button>
+      
+    </form>
+  </main>
+
+  <footer>
+    <p>Hotel Rainbow Krish</p>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+    </div>
+  </footer>
+  <script src="booking.js"></script>
+</body>
+</html>
